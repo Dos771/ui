@@ -1,0 +1,101 @@
+$btn-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2), 0px 4px 5px 0px rgba(0,0,0,0.14), 0px 1px 10px 0px rgba(0,0,0,0.12)
+
+body
+  font-family: 'Roboto', sans-serif
+  margin: 0
+  padding: 0
+
+
+.wrap-auth
+  background: #E5E5E5
+  min-height: 600px
+  display: flex
+  align-items: center
+
+
+.block-app
+  display: flex
+  flex-flow: row wrap
+  justify-content: space-between
+
+  .left-side
+    width: 18%
+    min-height: 100vh
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+
+  .right-side
+    width: 81.9%
+    background-color: #E5E5E5
+
+    .top
+      display: flex
+      flex-flow: row wrap
+      justify-content: space-between
+      align-items: center
+      padding: 0 3.5rem
+      min-height: 76px
+      background-color: #fff
+
+    .bottom
+      margin: 2.9375rem 3.5rem 6.1875rem 3.5rem
+      background-color: #fff
+      min-height: 596px
+      border-radius: 2px
+      position: relative
+
+  .add-item-btn
+    background-color: #007BFF
+    background-image: url(img/plus.png)
+    background-repeat: no-repeat
+    background-position: 13px center
+    font-weight: 500
+    line-height: 16px
+    letter-spacing: 1px
+    color: #fff
+    border: none
+    width: 138px
+    border-radius: 4px
+    padding: 10px 0
+    display: block
+    cursor: pointer
+    transition: box-shadow 0.3s
+    
+    &:hover
+      box-shadow: $btn-shadow
+        
+
+.logo
+  width: 169px
+  height: 52px
+  display: block
+  margin: 1.8125rem auto
+  background: url(img/logo.png) no-repeat center center
+
+
+.menu-app
+  list-style: none
+  padding: 0
+  margin: 0
+
+
+  a
+    text-decoration: none
+    padding: .75rem 0 .75rem 4.5rem
+    display: block
+    letter-spacing: 0.1px
+    font-size: 14px
+    font-weight: 500
+    line-height: 24px
+    background-image: url(img/assignment.png)
+    background-position: 32px center
+    background-repeat: no-repeat
+    transition: background-color 0.3s
+
+    &:hover
+      background-color: rgba(0, 123, 255, 0.41)
+
+  .exit
+    color: #BB1C1C
+    background-image: url(img/exit_to_app.png)
+
+

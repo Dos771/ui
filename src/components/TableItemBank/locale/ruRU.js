@@ -11,7 +11,7 @@ const ruRU = {
     }
   },
   pagination: {
-    labelRowsSelect: 'Строка',
+    labelRowsSelect: 'стр.',
     firstTooltip: 'Начальная',
     previousTooltip: 'Предыдущая',
     nextTooltip: 'Следующая',

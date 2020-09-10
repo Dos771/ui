@@ -1,11 +1,12 @@
+const existingTokens = JSON.parse(localStorage.getItem('token'))
 
-const request = async (url, method = 'GET', data = null) => {
+const fetchApi = async (url, method = 'GET', data = null) => {
 
     try {
         const headers = {
             'Content-Type' : 'application/json',
             'Accept' : 'application/json',
-            'Authorization' : 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNTk4ODg2MTY0LCJqdGkiOiIzMTliMDQ4YWNiM2Y0NWYyODc3YmEyOThmYmVkNTQwMiIsInVzZXJfaWQiOiJmYzkxMzFiYS1iNmYzLTQ5MTEtYTUzNy1iMDhkM2I4N2IxMTUifQ.XLDzcteFhW-46nhVcITaw01Rk1qhHduV8pMqOFypOnA'
+            'Authorization' : `Bearer ${existingTokens}`
         }
 
         let body
@@ -28,4 +29,4 @@ const request = async (url, method = 'GET', data = null) => {
 
 }
 
-export default request
+export default fetchApi
